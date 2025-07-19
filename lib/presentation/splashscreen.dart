@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:machine_test_lilac/presentation/phonenumber.dart';
 
 class Splash extends StatelessWidget {
   const Splash({super.key});
@@ -10,7 +11,7 @@ class Splash extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            'assets/images/808f1e2e679edf7a7dff2065130238978ad11f71.png', 
+            'assets/images/808f1e2e679edf7a7dff2065130238978ad11f71.png',
             fit: BoxFit.cover,
           ),
           Column(
@@ -43,7 +44,13 @@ class Splash extends StatelessWidget {
                   spacing: 8,
                   children: [
                     ElevatedButton.icon(
-                      onPressed: () => (context),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Phonenumber()),
+                        );
+                      },
                       icon: Image.asset(
                         'assets/images/google.png',
                         height: 20,
@@ -64,7 +71,13 @@ class Splash extends StatelessWidget {
                           fixedSize: Size(280, 40)),
                     ),
                     ElevatedButton.icon(
-                      onPressed: () => (context),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Phonenumber()),
+                        );
+                      },
                       icon: Image.asset(
                         'assets/images/f.png',
                         height: 20,
@@ -85,7 +98,13 @@ class Splash extends StatelessWidget {
                           fixedSize: Size(280, 40)),
                     ),
                     ElevatedButton.icon(
-                      onPressed: () => (context),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Phonenumber()),
+                        );
+                      },
                       icon: Icon(
                         Icons.call,
                         color: Colors.green,
