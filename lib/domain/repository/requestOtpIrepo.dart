@@ -3,5 +3,5 @@ import 'package:machine_test_lilac/domain/failures/commonfailure.dart';
 import 'package:machine_test_lilac/domain/model/requestOTP.dart';
 
 abstract class IrequestOTP{
-  Future<Either<CommonFailure,RequestOTP>>postrequestotp();
+  Future<Either<CommonFailure,RequestOTP>>postrequestotp(String phone);
 } 

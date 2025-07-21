@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:machine_test_lilac/presentation/message.dart';
 
 class Otpscreen extends StatelessWidget {
-  const Otpscreen({super.key});
+  const Otpscreen({super.key, required String phoneNumber});
 
   @override
   Widget build(BuildContext context) {
